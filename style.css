@@ -1,8 +1,6 @@
-/* Reset et base */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
   }
   
   body {
@@ -13,12 +11,11 @@
     padding-bottom: 50px;
   }
   
-  /* Header */
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    padding: 16px 32px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
   }
@@ -28,149 +25,187 @@
   }
   
   nav a {
-    margin-left: 1.5rem;
+    margin-left: 24px;
     text-decoration: none;
     color: #2e2e2e;
     font-weight: bold;
   }
   
-  nav a:hover {
-    color: #4a785b;
-  }
-  
-  /* Section titres */
-  section h2, h3 {
-    text-align: center;
-    margin: 2rem 0 1rem;
-    font-weight: bold;
-  }
-  
-  /* Image + slogan */
-  #div1 img {
+.hero {
+    display: flex;
+    height: 300px;
     width: 100%;
-    max-height: 400px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .hero-image {
+    flex: 1;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   
-  #div2 {
+  .hero-text {
+    flex: 1;
+    background-color: #3f5e5e;
+    color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin: 2rem 0;
+    padding: 20px;
   }
   
-  #div2 img {
-    width: 100px;
-    margin-bottom: 1rem;
+  .hero-text .logo-flamme {
+    width: 40px;
+    margin-bottom: 10px;
   }
   
-  /* Présentation produits */
-  #div4, #div6, #div7 {
+  .hero-text h1 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+  
+  .hero-text p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .avantages {
+    background-color: #f8f5f2;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.avantages .intro h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.avantages .intro p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    font-size: 16px;
+    color: #333;
+}
+
+.avantages-grid {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 30px;
     flex-wrap: wrap;
-    margin: 2rem 0;
-  }
-  
-  /* Card produits */
-  .card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 1rem;
-    max-width: 240px;
+}
+
+.carte-avantage {
+    border: 1px solid #4a362b;
+    background-color: #ffffff;
+    padding: 20px;
+    width: 200px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.carte-avantage img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.carte-avantage p {
+    color: #4a362b;
+    font-size: 16px;
+    font-weight: 500;
+}
+.banniere-verte {
+    background-color: #3f5e5e; 
+    padding: 32px;
     text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .card h4 {
-    color: #4a785b;
-    margin: 0.5rem 0;
-  }
-  
-  .card button {
-    margin-top: 0.5rem;
-    background-color: #4a785b;
-    color: white;
-    padding: 0.4rem 0.8rem;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.9rem;
-  }
-  
-  .card button:hover {
-    background-color: #3b6349;
-  }
-  
-  /* Formulaire */
-  form {
-    max-width: 700px;
-    margin: 2rem auto;
-    background-color: #fff;
-    padding: 2rem;
+}
+
+.banniere-verte p {
+    color: #f5f5f5;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#div5 h3 {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Georgia', serif;
+    margin-bottom: 25px;
+    color: #1d1d1f;
+}
+
+#maillots.cards {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    padding: 0 32px;
+}
+
+.card {
+    background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  form div {
-    margin-bottom: 1rem;
-  }
-  
-  form label {
-    display: block;
-    margin-bottom: 0.3rem;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  textarea {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: transform 0.2s;
+}
+
+.card img {
     width: 100%;
-    padding: 0.6rem;
-    border: 1px solid #4a785b;
-    border-radius: 6px;
-    font-size: 1rem;
-    background-color: #fefefe;
-  }
-  
-  button[type="submit"] {
-    background-color: #4a785b;
-    color: white;
-    padding: 0.6rem 2rem;
-    border: none;
     border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 32px;
+}
+
+.card h3 {
+    font-size: 20px;
     font-weight: bold;
+    margin-bottom: 8px;
+    color: #1d1d1f;
+}
+
+.card .color {
+    color: #3e603d;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.card button {
+    background-color: #3075a5;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
     cursor: pointer;
-    display: block;
-    margin: 1rem auto 0;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #3b6349;
-  }
-  
-  /* Footer */
-  footer {
-    margin-top: 4rem;
-    text-align: center;
-    padding: 2rem;
-    background-color: #fff;
-    border-top: 1px solid #ddd;
-  }
-  
-  footer img {
-    height: 50px;
-    margin-bottom: 0.5rem;
-  }
-  
+}
+
+.card:hover {
+    transform: none;
+}
