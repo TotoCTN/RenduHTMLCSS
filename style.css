@@ -1,0 +1,176 @@
+/* Reset et base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Georgia', serif;
+    background-color: #f9f6f3;
+    color: #2e2e2e;
+    line-height: 1.6;
+    padding-bottom: 50px;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  header img {
+    height: 50px;
+  }
+  
+  nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #4a785b;
+  }
+  
+  /* Section titres */
+  section h2, h3 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-weight: bold;
+  }
+  
+  /* Image + slogan */
+  #div1 img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  
+  #div2 {
+    text-align: center;
+    margin: 2rem 0;
+  }
+  
+  #div2 img {
+    width: 100px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Présentation produits */
+  #div4, #div6, #div7 {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  /* Card produits */
+  .card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    max-width: 240px;
+    text-align: center;
+    transition: transform 0.2s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .card h4 {
+    color: #4a785b;
+    margin: 0.5rem 0;
+  }
+  
+  .card button {
+    margin-top: 0.5rem;
+    background-color: #4a785b;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
+  .card button:hover {
+    background-color: #3b6349;
+  }
+  
+  /* Formulaire */
+  form {
+    max-width: 700px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  form div {
+    margin-bottom: 1rem;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #4a785b;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #fefefe;
+  }
+  
+  button[type="submit"] {
+    background-color: #4a785b;
+    color: white;
+    padding: 0.6rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto 0;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #3b6349;
+  }
+  
+  /* Footer */
+  footer {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+  }
+  
+  footer img {
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+  
